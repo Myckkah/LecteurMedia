@@ -11,7 +11,8 @@ namespace BO
         #region ATTRIBUTS
 
         private string nom;
-        private int duree;
+        private string chemin;
+        private string extension;
 
         #endregion
 
@@ -23,11 +24,29 @@ namespace BO
             set { nom = value; }
         }
 
-        public int Duree 
+        public string Chemin 
         {
-            get { return duree; }
-            set { duree = value; }
+            get { return chemin; }
+            set { chemin = value; }
         }
+
+        public string Extension
+        {
+            get { return extension; }
+            set { extension = value; }
+        }
+
         #endregion
+
+        public Video() 
+        { 
+        }
+
+        public Video(string nom, string chemin, string extension)
+        {
+            this.Nom = nom;
+            this.Chemin = chemin;
+            this.Extension = extension;
+        }
     }
 }

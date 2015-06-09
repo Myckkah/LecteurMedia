@@ -1,0 +1,4 @@
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BO\bin\Debug\BO.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BO\bin\Debug\BO.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BO\obj\Debug\BO.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BO\obj\Debug\BO.pdb

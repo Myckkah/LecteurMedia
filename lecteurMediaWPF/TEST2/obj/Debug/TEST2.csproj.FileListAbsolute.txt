@@ -1,0 +1,10 @@
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\TEST2.exe.config
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\TEST2.exe
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\TEST2.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\BLL.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\BO.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\BLL.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\bin\Debug\BO.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\obj\Debug\TEST2.csprojResolveAssemblyReference.cache
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\obj\Debug\TEST2.exe
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\TEST2\obj\Debug\TEST2.pdb

@@ -1,1 +1,13 @@
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\IHM.exe.config
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\IHM.exe
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\IHM.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\MainWindow.baml
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\App.g.cs
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM_MarkupCompile.cache
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.g.resources
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.Properties.Resources.resources
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.csproj.GenerateResource.Cache
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.exe
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.csprojResolveAssemblyReference.cache
