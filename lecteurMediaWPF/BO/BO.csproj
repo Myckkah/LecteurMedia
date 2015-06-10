@@ -42,6 +42,12 @@
     <Compile Include="Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\02-GestionEmployes\Outils\Outils.csproj">
+      <Project>{848786d8-4144-4ae4-b423-d06961a7c3d8}</Project>
+      <Name>Outils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

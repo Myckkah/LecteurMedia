@@ -20,7 +20,7 @@ namespace BO
 
         public string Nom
         {
-            get { return nom; }
+            get { return GestionEmployes.Outil.replaceCaractere(nom); }
             set { nom = value; }
         }
 

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BLL;
+using BO;
 
 namespace IHM
 {
@@ -20,9 +22,19 @@ namespace IHM
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MgtVideo mgt = MgtVideo.getInstance();
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Grid_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+            Video video = (Video)(sender as Grid).DataContext;
+            
+            media.Source = new Uri(video.Chemin);
+            media.LoadedBehavior = MediaState.Play;
         }
     }
 }

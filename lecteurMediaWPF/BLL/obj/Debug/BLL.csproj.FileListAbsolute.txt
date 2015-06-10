@@ -1,7 +1,9 @@
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BLL.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BLL.pdb
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BO.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\Outils.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BO.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\Outils.pdb
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\obj\Debug\BLL.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\obj\Debug\BLL.pdb

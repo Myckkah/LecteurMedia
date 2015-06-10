@@ -1,8 +1,11 @@
-﻿<Application x:Class="IHM.App"
+﻿<Application
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:BO="clr-namespace:BO;assembly=BO" x:Class="IHM.App"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <BO:Video x:Key="testVideo" Chemin="\\10.35.41.14\Partage\Videos\Stephen-Toub-Task-Based-Asynchrony-with-Async_mid.mp4" Extension=".mp4" Nom="Stephen Toub Task Based Asynchrony with Async mid"/>
+
     </Application.Resources>
 </Application>
