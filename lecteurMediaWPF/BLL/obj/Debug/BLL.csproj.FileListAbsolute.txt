@@ -2,11 +2,8 @@ C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\obj\De
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BLL.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BLL.pdb
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BO.dll
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\prjThumbExtract.exe
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\Outils.dll
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\prjThumbExtract.pdb
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\prjThumbExtract.xml
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\BO.pdb
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\Outils.pdb
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\obj\Debug\BLL.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\obj\Debug\BLL.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\OutilsBis.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\BLL\bin\Debug\OutilsBis.pdb

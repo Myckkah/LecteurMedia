@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD783D8E-8B97-4D47-BE5A-EBFD8D2C34B0}</ProjectGuid>
+    <ProjectGuid>{F5C3F725-A7E5-4479-BE0D-DEF4E4541FC1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BLL</RootNamespace>
-    <AssemblyName>BLL</AssemblyName>
+    <RootNamespace>OutilsBis</RootNamespace>
+    <AssemblyName>OutilsBis</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,26 +34,22 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MgtVideo.cs" />
+    <Compile Include="FileThumbnail.cs" />
+    <Compile Include="Interfaces\Enums.cs" />
+    <Compile Include="Interfaces\IEnumIDList.cs" />
+    <Compile Include="Interfaces\IExtractIcon.cs" />
+    <Compile Include="Interfaces\IExtractImage.cs" />
+    <Compile Include="Interfaces\IShellFolder.cs" />
+    <Compile Include="Outil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BO\BO.csproj">
-      <Project>{d3b05c09-600f-46e9-aab3-5b338593d48c}</Project>
-      <Name>BO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OutilsBis\Outils.csproj">
-      <Project>{f5c3f725-a7e5-4479-be0d-def4e4541fc1}</Project>
-      <Name>Outils</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

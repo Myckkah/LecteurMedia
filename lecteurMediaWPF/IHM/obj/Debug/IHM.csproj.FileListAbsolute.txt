@@ -14,13 +14,8 @@ C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\De
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\Vlc.DotNet.Core.Interops.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\Vlc.DotNet.Forms.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\Vlc.DotNet.Wpf.dll
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\prjThumbExtract.exe
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\Outils.dll
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\BLL.pdb
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\BO.pdb
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\prjThumbExtract.pdb
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\prjThumbExtract.xml
-C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\Outils.pdb
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.csprojResolveAssemblyReference.cache
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\MainWindow.baml
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.g.resources
@@ -28,3 +23,5 @@ C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\De
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.csproj.GenerateResource.Cache
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.exe
 C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\obj\Debug\IHM.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\OutilsBis.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\IHM\bin\Debug\OutilsBis.pdb

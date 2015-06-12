@@ -1,0 +1,4 @@
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\OutilsBis\bin\Debug\OutilsBis.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\OutilsBis\bin\Debug\OutilsBis.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\OutilsBis\obj\Debug\OutilsBis.dll
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\OutilsBis\obj\Debug\OutilsBis.pdb

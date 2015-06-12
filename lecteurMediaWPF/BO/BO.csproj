@@ -46,13 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\02-GestionEmployes\Outils\Outils.csproj">
-      <Project>{848786d8-4144-4ae4-b423-d06961a7c3d8}</Project>
+    <ProjectReference Include="..\OutilsBis\Outils.csproj">
+      <Project>{f5c3f725-a7e5-4479-be0d-def4e4541fc1}</Project>
       <Name>Outils</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\projet test\ModOutils.csproj">
-      <Project>{11d25f6b-8a28-4b48-af8e-cf1c6ed2c58c}</Project>
-      <Name>ModOutils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
