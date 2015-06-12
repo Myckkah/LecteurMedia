@@ -5,7 +5,6 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
-        <BO:Video x:Key="testVideo" Chemin="\\10.35.41.14\Partage\Videos\Stephen-Toub-Task-Based-Asynchrony-with-Async_mid.mp4" Extension=".mp4" Nom="Stephen Toub Task Based Asynchrony with Async mid"/>
 
     </Application.Resources>
 </Application>

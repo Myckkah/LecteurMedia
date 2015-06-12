@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BLL;
 using BO;
 using System.ComponentModel;
+using System.Configuration;
 
 
 namespace IHM
@@ -22,7 +23,7 @@ namespace IHM
 
         public MainViewModel()
         {
-            MgtVideo.getInstance().TrouverFilm(@"\\10.35.41.14\Partage\Videos\");
+            MgtVideo.getInstance().TrouverFilm(ConfigurationManager.AppSettings["Dossier"]);
             ListeVideo = MgtVideo.getInstance().ListeVideo;
         }
     }

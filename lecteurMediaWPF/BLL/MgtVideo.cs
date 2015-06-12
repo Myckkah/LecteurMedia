@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BO;
 using System.ComponentModel;
 using System.IO;
+using System.Drawing;
 
 namespace BLL
 {
@@ -49,9 +50,9 @@ namespace BLL
 
         #region FONCTIONS
 
-        public void AjouterVideo(string nom, string chemin, string extension)
+        public void AjouterVideo(string nom, string chemin, string extension, Bitmap image)
         {
-            Video video = new Video(nom, chemin, extension);
+            Video video = new Video(nom, chemin, extension, image);
             ListeVideo.Add(video);
         }
 
@@ -87,13 +88,17 @@ namespace BLL
 
         public void TrouverFilm(string path)
         {
-           List<string> extensions = new List<string>(){".mp4", ".avi", ".mkv"};
+           
+            List<string> extensions = new List<string>(){".mp4", ".avi", ".mkv", ".mp3"};
            foreach (string item in Directory.GetFiles(path, "*", SearchOption.AllDirectories))
            {
-               if (extensions.Contains(Path.GetExtension(item)))
+               using (FileThumbnail ft = new FileThumbnail(item, 200, 200))
                {
-                   AjouterVideo(Path.GetFileName(item).Substring(0, Path.GetFileName(item).LastIndexOf('.')), item,
-                       Path.GetExtension(item));
+                   if (extensions.Contains(Path.GetExtension(item)))
+                   {
+                       AjouterVideo(Path.GetFileName(item).Substring(0, Path.GetFileName(item).LastIndexOf('.')), item,
+                           Path.GetExtension(item), new Bitmap(ft.Thumbnail));
+                   }
                }
            }
         }

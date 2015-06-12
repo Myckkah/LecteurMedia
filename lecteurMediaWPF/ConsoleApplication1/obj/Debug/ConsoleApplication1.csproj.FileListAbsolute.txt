@@ -1,0 +1,5 @@
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Administrateur\Documents\GitHub\LecteurMedia\lecteurMediaWPF\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

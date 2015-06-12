@@ -1,45 +1,95 @@
-﻿<Window
+﻿<Window KeyDown="grid_KeyDown_1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:ModelView="clr-namespace:IHM"
-        xmlns:ComponentModel="clr-namespace:System.ComponentModel;assembly=System" xmlns:BO="clr-namespace:BO;assembly=BO" x:Class="IHM.MainWindow"
-        Title="MainWindow" Height="520" Width="702.778">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="179*"/>
-        </Grid.ColumnDefinitions>
-        <ScrollViewer Margin="0,0,519,0">
-            <ItemsControl
-            x:Name="ListeVideo"
-            ItemsSource ="{Binding ListeVideo}"
+        xmlns:WPF="clr-namespace:Microsoft.TeamFoundation.Controls.WPF;assembly=Microsoft.TeamFoundation.Controls" x:Class="IHM.MainWindow"
+        Title="MainWindow" Height="693.944" Width="1053"
+        MinHeight="700"
+        MinWidth="1053">
+    <Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer
             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-            Background="#FF727272"
-            ScrollViewer.IsDeferredScrollingEnabled="True" HorizontalAlignment="Left" Width="179" FontFamily="Consolas"
-            >
-                <ItemsControl.DataContext>
-                    <ModelView:MainViewModel/>
-                </ItemsControl.DataContext>
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel IsItemsHost="True"/>
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            ScrollViewer.CanContentScroll="True"
+            ScrollViewer.IsDeferredScrollingEnabled="True" 
+            Margin="0,0,859,0"
+            Grid.ColumnSpan="2"
+            Grid.Column="0"
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Stretch"
+            MaxWidth="175">
 
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Grid x:Name="GridVideo" Margin="5" Width="150" MouseLeftButtonUp="Grid_MouseLeftButtonUp_1" ToolTip="{Binding Extension}">
-                            <Rectangle Fill="Black">
-                                <Rectangle.BitmapEffect>
-                                    <DropShadowBitmapEffect Opacity="1" ShadowDepth="0" />
-                                </Rectangle.BitmapEffect>
-                            </Rectangle>
-                            <Border Background="white" BorderBrush="{Binding Color}" BorderThickness="5" Height="150"  Width="150"/>
-                            <TextBlock x:Name ="textblockVideo" VerticalAlignment="Bottom" TextWrapping="WrapWithOverflow" FontWeight="Bold" Background="AliceBlue" Text="{Binding Nom}" Height="50"  Margin="3,0,3,0"  />
-                        </Grid>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-        </ScrollViewer>
-        <MediaElement x:Name="media" Height="493" Margin="181,0,0,0" Width="514" Panel.ZIndex="999999"/>
-    </Grid>
+                <ItemsControl 
+            		x:Name="ListeVideo" 
+            		ItemsSource ="{Binding ListeVideo}" 
+            		Background="#FF727272" 
+            		HorizontalAlignment="Stretch" 
+            		VerticalAlignment="Stretch">
+                    <ItemsControl.DataContext>
+                        <ModelView:MainViewModel/>
+                    </ItemsControl.DataContext>
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel IsItemsHost="True"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid x:Name="grid" Margin="5" Width="150" MouseLeftButtonDown="Grid_MouseLeftButtonDown_1" ToolTip="{Binding Nom}">
+                                <Rectangle Fill="{Binding Color}">
+                                    <Rectangle.BitmapEffect>
+                                        <DropShadowBitmapEffect Opacity="1" ShadowDepth="0" />
+                                    </Rectangle.BitmapEffect>
+                                </Rectangle>
+                                <Image x:Name="imageMovie" VerticalAlignment="Top" Margin="15" Stretch="UniformToFill" StretchDirection="UpOnly" ToolTip="{Binding Nom}" Source="{Binding ImageVideoSource}" HorizontalAlignment="Center" />
+                                <TextBlock VerticalAlignment="Bottom" Padding="10,0" TextWrapping="WrapWithOverflow" HorizontalAlignment="Stretch" FontWeight="Normal" Background="{Binding Color}" Text="{Binding Nom}" Height="50"  Margin="3,0,3,0" Foreground="White" FontFamily="Microsoft YaHei" FontSize="12" TextAlignment="Center"  />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+            <Image x:Name="image_pause" Source="images\Pause_button_512.png" Visibility="Hidden" MouseLeftButtonDown="OnMouseDownPauseMedia" Grid.Column="1" Margin="368,-45,353,45" Panel.ZIndex="9999999"/>
+            <MediaElement x:Name="myPlayer" LoadedBehavior="Manual" Stretch="Fill" Grid.Column="1" Margin="0,0,0,76" MouseLeftButtonDown="OnMouseDownPauseMedia"/>
+            <StackPanel x:Name="stackPanelTimeLine" Margin="0,602,0,45" Grid.Column="1" Visibility="Visible" VerticalAlignment="Bottom">
+                <StatusBar x:Name="statusBartime" Visibility="Hidden" Background="{Binding Color}">
+                    <StatusBar.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Grid Background="{Binding Color}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </ItemsPanelTemplate>
+                    </StatusBar.ItemsPanel>
+                    <StatusBarItem VerticalAlignment="Bottom">
+                        <TextBlock x:Name="lblProgressStatus" Background="{Binding Color}" Foreground="{Binding Color}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei" TextAlignment="Center" FontSize="12">00:00:00</TextBlock>
+                    </StatusBarItem>
+                    <StatusBarItem Grid.Column="1" HorizontalContentAlignment="Stretch" Background="White" VerticalAlignment="Bottom">
+                        <Slider x:Name="sliProgress" Thumb.DragStarted="sliProgress_DragStarted"  Thumb.DragCompleted="sliProgress_DragCompleted" ValueChanged="sliProgress_ValueChanged" VerticalAlignment="Bottom"/>
+                    </StatusBarItem>
+                </StatusBar>
+            </StackPanel>
+            <StackPanel x:Name="stackPanelControl" Background="{Binding Color}" Width="240" Orientation="Horizontal" Margin="368,633,275,0" Grid.ColumnSpan="1" Grid.Column="1" VerticalAlignment="Bottom" Visibility="Hidden">
+
+                <Button Width="45" Foreground="White" Background="{Binding Color}" Focusable="False" ToolTip="Play / Pause" >
+                    <Image x:Name="btn_pause" Source="images\Pause_button_24.png" MouseLeftButtonDown="OnMouseDownPauseMedia" />
+                </Button>
+
+                <Button Width="45" Foreground="White" Background="{Binding Color}" Focusable="False" ToolTip="Stop" >
+                    <Image Source="images\Stop_button_24.png" MouseDown="OnMouseDownStopMedia"  />
+                </Button>
+                
+                <Slider x:Name="volumeSlider"  ValueChanged="ChangeMediaVolume" Width="100" ToolTip="Volume" VerticalAlignment="Center"/>
+
+            </StackPanel>
+        </Grid>
+    </Border>
 </Window>

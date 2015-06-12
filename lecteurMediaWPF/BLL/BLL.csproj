@@ -30,19 +30,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MgtVideo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\projet test\ModOutils.csproj">
+      <Project>{11d25f6b-8a28-4b48-af8e-cf1c6ed2c58c}</Project>
+      <Name>ModOutils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BO\BO.csproj">
       <Project>{d3b05c09-600f-46e9-aab3-5b338593d48c}</Project>
       <Name>BO</Name>
